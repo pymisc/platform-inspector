@@ -1,4 +1,4 @@
-print("10 way to use a print statement")
+print("10 ways to use a print statement")
 
 # 1 - Simplest hello
 print("Hello")
