@@ -51,7 +51,7 @@ Production-Style Platform Engineering Tool
 
 # Phase 1 — Python Foundations
 
-- [ ] **STEP 1 — Hello Platform Inspector**  
+- [x] **STEP 1 — Hello Platform Inspector**  
   Create `platform_inspector.py` and print a simple welcome message.
 
 - [ ] **STEP 2 — Strings**  
