@@ -86,7 +86,7 @@ print(f"Memory usage: {memory_bytes:,} bytes")
 # 14 - Print with alignment - like a well formatted report
 # <20 = left-align in a minimum 20-character field.
 # Shorter text is space-padded; longer text is NOT truncated.
-print(f"{'RESOURCE9101315171921':<20}{'STATUS':<10}")
+print(f"{'RESOURCE':<20}{'STATUS':<10}")
 print(f"{'kubernetes':<20}{'HEALTHY':<10}")
 print(f"{'DR site':<20}{'NOT HEALTHY ajdj':<10}")
 print(f"{'COLO Site':<20}{'HEALTHY':<10}")

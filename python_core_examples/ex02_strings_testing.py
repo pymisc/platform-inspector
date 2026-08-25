@@ -61,3 +61,67 @@ while index != -1:
 print(positions)
 print(type(positions))
 
+
+# 10. Replacing text
+new_text=os_name.replace("Linux", "Windows")
+print(f"new OS is: {new_text}")
+
+# 11. Upper and lower case conversion
+print(f"Original value of OS:{os_name}")
+print(f"Upper case of OS: {os_name.upper()}")
+print(f"this is lower case example: {os_name.lower()}")
+print("Upper case of OS: ", format(os_name.upper()), " This is supposed to be in UPPER case")
+
+
+# 12. Splitting strings (.split())
+host_parts = hostname.split("-")
+print(type(host_parts))
+print(host_parts)
+
+# 13. Joining strings
+tags = ["web", "frontend", "backend"]
+tag_string = ",".join(tags)
+print(type(tag_string))
+print(tag_string)
+
+# 14. Stripping Whitespaces (.strip())
+test_txt = "   this is a sample text   "
+print(test_txt)
+print(test_txt.strip())
+
+# 15. Checking prefix and suffix with .startswith() and .endswith()
+if hostname.startswith("app"):
+    print("This is an application server")
+elif hostname.endswith("01"):
+    print("This is the primary node")
+
+# 16. Checking strings for alphabets, numbers and alphanumeric)
+port_number = "abc"
+if port_number.isalnum():
+    print("The given text is alpha-numeric")
+
+if port_number.isnumeric():
+    print("The given text is a number")
+
+if port_number.isalpha():
+    print("The given text is alphbets")
+
+# 17. Padding strings (.ljust, .rjust, .center)
+print(os_name.center(20), "  test  ", env_name.center(20), sep="|")
+
+# 18. Raw strings
+windows_path1 = "C:\System32\new\table\hosts"
+windows_path2 = r"C:\System32\new\table\hosts"
+print(windows_path1)
+print(windows_path2)
+
+# 19. Capitalization & title casing (.capitalize() , .title() )
+raw_text = "staging area"
+print("Original text:", raw_text)
+print("Capitalize example: ", raw_text.capitalize())
+print("Title example: ", raw_text.title())
+
+# 20. zero-padding (.zfill())
+node="11"
+print("Original text:", node)
+print("Zero padding / ZFILL example:", node.zfill(10))
