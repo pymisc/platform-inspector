@@ -54,7 +54,7 @@ Production-Style Platform Engineering Tool
 - [x] **STEP 1 — Hello Platform Inspector**  
   Create `platform_inspector.py` and print a simple welcome message.
 
-- [ ] **STEP 2 — Strings**  
+- [x] **STEP 2 — Strings**  
   Store platform-related values such as hostname, OS name, and environment name in string variables.
 
 - [ ] **STEP 3 — Integers**  
