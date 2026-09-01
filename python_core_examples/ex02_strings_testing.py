@@ -37,14 +37,17 @@ separator="-"*40
 print(separator)
 
 # 07: String slicing ([start:stop])
+print("Slicing example:")
 server_id=hostname[-2:]
 print(server_id)
 
 # 08: Checking sub-strings (in)
+print("sub-string example:")
 if "app" in hostname:
     print("This is an application server")
 
 # 09: Finding substring positions (.find())
+print("Find method demo for a string:")
 hyphen_index=hostname.find("-")
 print(f"The first position of hyphen is {hyphen_index}")
 
@@ -110,6 +113,7 @@ if port_number.isalpha():
 print(os_name.center(20), "  test  ", env_name.center(20), sep="|")
 
 # 18. Raw strings
+print("Raw strings example")
 windows_path1 = "C:\System32\new\table\hosts"
 windows_path2 = r"C:\System32\new\table\hosts"
 print(windows_path1)
@@ -125,3 +129,83 @@ print("Title example: ", raw_text.title())
 node="11"
 print("Original text:", node)
 print("Zero padding / ZFILL example:", node.zfill(10))
+
+
+# 21 - Splitlines example - string to list converter (newline as separator by default)
+kubectl_output = """pod-1 Running
+pod-2 Pending
+pod-3 Running"""
+
+lines = kubectl_output.splitlines()
+print("kubectl_output data type: ", type(kubectl_output))
+print("lines data type", type(lines))
+print(kubectl_output, " " , lines)
+
+# 22 - Partition - to split key / value etc.
+config_line = "timeout=30"
+key, separator, value = config_line.partition("=")
+print("Key:", key)
+print("Value:", value)
+
+config_line1 = "name: vikas"
+key, separator, value = config_line1.partition(":")
+print("Key:", key)
+print("Value:", value)
+print("Separator: \"", separator, "\"")
+
+# 23 - Removing prefix or suffix
+image = "registry.example.com/myapp:v1.2.0"
+print(image.removeprefix("registry.example.com/myapp:"))
+
+filename="application.log"
+print(filename.removesuffix(".log"))
+
+# 24 - Counting occurances
+log_line = "ERROR timeout ERROR connection ERROR error"
+error_count=log_line.count("ERROR")
+print("Case sensitive", error_count)
+
+# 25 - Casefold - use for case-insentive searches
+# Case-insensitive count using method chaining
+error_count1=log_line.casefold().count("error")
+print("Case insensitive", error_count1)
+
+# Some more examples of chaining:
+# user_input.strip().lower()
+# filename.strip().removesuffix(".log")
+# line.strip().split(",")
+# hostname.strip().lower().startswith("prod-")
+
+# 26 - space and digit only check
+port = "9090"
+if port.isdigit():
+    print("port is digit")
+
+blank_line = "    "
+if blank_line.isspace():
+    print("blank_line variable contains only space")
+
+# 27 lstrip and rstrip usage
+log_line = "    Error connection refused\n"
+print("Left strip: ", log_line.lstrip())
+print("Right strip: ", log_line.rstrip())
+
+
+# 28 - rsplit - for splitting a string
+image = "registry.example.com/team/app:v1.2.3"
+repository, tag = image.split(":", 1 )
+print(repository)
+print(tag)
+
+# 29 - string comparison and normalization patterns
+environment = " PRODUCTION "
+print(environment)
+print(environment.strip())
+if environment.strip().lower() == "production":
+    print("Production environment detected")
+
+# 30 - Palindrome check - reversing a string
+word = "MaDam"
+reverse_word=word[::-1]
+if word.lower() == reverse_word.lower():
+    print("The given word ", word, " is a palindrome (checked as case insensitive)")
