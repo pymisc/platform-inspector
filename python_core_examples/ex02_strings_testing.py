@@ -214,3 +214,17 @@ if word.lower() == reverse_word.lower():
 print("Hostname: ", hostname)
 if "db" not in hostname:
     print("the host is not a database server")
+
+# 32 - find() vs index() - locate substring position
+log_line = "ERROR connection timeout"
+
+# Both return the starting position when text exists
+print("find():", log_line.find("connection"))
+print("index():", log_line.index("connection"))
+
+# When text does NOT exist:
+print("find() missing:", log_line.find("warning"))   # Returns -1
+print("index() missing:", log_line.index("warning"))   # Returns ??
+
+# index() raises ValueError when substring is not found
+# print("index() missing:", log_line.index("warning"))
