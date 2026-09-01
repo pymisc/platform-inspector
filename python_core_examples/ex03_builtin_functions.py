@@ -15,7 +15,10 @@ name = input("Enter your name:")
 print("Hello ", name, "! How are you doing today?")
 print("Hello ", name.strip(), "! How are you doing today?", sep="") # desired output without extra space
 
-print("Your name is ", len(name), "characters long!")
+print("Your name is ", len(name), "characters long! (Without stripping)")
+print("Raw length:", len(name))
+print("Cleaned length:", len(name.strip()))
+
 
 name_v1="name" + "\n" + "hello"
 print(repr(name_v1))
