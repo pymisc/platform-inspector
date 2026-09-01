@@ -193,7 +193,7 @@ print("Right strip: ", log_line.rstrip())
 
 # 28 - rsplit - for splitting a string
 image = "registry.example.com/team/app:v1.2.3"
-repository, tag = image.split(":", 1 )
+repository, tag = image.rsplit(":", 1 )
 print(repository)
 print(tag)
 
@@ -209,3 +209,8 @@ word = "MaDam"
 reverse_word=word[::-1]
 if word.lower() == reverse_word.lower():
     print("The given word ", word, " is a palindrome (checked as case insensitive)")
+
+# 31 - "not-in" clause
+print("Hostname: ", hostname)
+if "db" not in hostname:
+    print("the host is not a database server")
