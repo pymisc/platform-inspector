@@ -9,6 +9,7 @@
 # 6. bool()
 # 7. input()
 # 8. repr()
+# 9. isinstance() - check whether an object is a particular type (returns true / false)
 
 name = input("Enter your name:")
 print("Hello ", name, "! How are you doing today?")
@@ -65,4 +66,4 @@ print(bool(-1))       # true
 print("Here comes little more sophisticated example..")
 user_input = "   "
 print(bool(user_input))           # true - because user_input is still a non-empty string
-print(bool(user_input.strip()))   # false - because strip function remove all spaces! :D
+print(bool(user_input.strip()))   # false - because strip method remove all spaces! :D
