@@ -8,7 +8,7 @@
 # 5. float()
 # 6. bool()
 # 7. input()
-# 8. repr()
+# 8. repr() - shows the raw/debug representation of a value, including special characters like \n and \t
 # 9. isinstance() - check whether an object is a particular type (returns true / false)
 
 name = input("Enter your name:")
