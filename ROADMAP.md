@@ -66,8 +66,28 @@ Production-Style Platform Engineering Tool
 - [ ] **STEP 5 — Booleans**  
   Represent states such as `docker_installed`, `cluster_reachable`, and `healthy`.
 
-- [x] **STEP 6 — Type Inspection**  
-  Use `type()` to understand the types of variables being used.
+- [x] **STEP 6 — Type Inspection & Essential Built-in Functions**  
+
+  Learn how to inspect Python data types and use a small set of essential
+  built-in functions commonly encountered in Python programs.
+
+  Create `python_core_examples/ex06_builtin_functions.py` and practice:
+
+  - `len()` — get the length of a value such as a string
+  - `type()` — inspect a value's data type
+  - `str()` — convert a value to a string
+  - `int()` — convert a compatible value to an integer
+  - `float()` — convert a compatible value to a floating-point number
+  - `bool()` — evaluate the truthiness of a value
+  - `input()` — accept user input
+  - `repr()` — get a debug-friendly representation of a value
+  - `isinstance()` — check whether a value is an instance of a particular type
+
+  Use `type()` and `isinstance()` to understand the types of variables being
+  used and observe how type conversion changes what operations are available.
+
+  Additional built-in functions will be added later as they become relevant
+  in future steps.
 
 - [ ] **STEP 7 — String Formatting**  
   Learn f-strings and produce cleaner status output.
