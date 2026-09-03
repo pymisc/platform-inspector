@@ -66,7 +66,7 @@ Production-Style Platform Engineering Tool
 - [ ] **STEP 5 — Booleans**  
   Represent states such as `docker_installed`, `cluster_reachable`, and `healthy`.
 
-- [ ] **STEP 6 — Type Inspection**  
+- [x] **STEP 6 — Type Inspection**  
   Use `type()` to understand the types of variables being used.
 
 - [ ] **STEP 7 — String Formatting**  
