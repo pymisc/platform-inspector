@@ -58,3 +58,21 @@ print(type(restart_count))
 restart_count = int(restart_count)
 print(type(restart_count))
 print(restart_count + 1)
+
+
+print("**** Different way to represent: ****")
+memory_bytes = psutil.virtual_memory().total
+
+print("Memory in bytes:", memory_bytes)
+print("Type:", type(memory_bytes))
+
+memory_gib = memory_bytes // (1024 ** 3)
+
+print("Memory in whole GiB:", memory_gib)
+print("Type:", type(memory_gib))
+
+print("Using / :", memory_bytes / (1024 ** 3))
+print("Using //:", memory_bytes // (1024 ** 3))
+
+print(type(memory_bytes / (1024 ** 3)))
+print(type(memory_bytes // (1024 ** 3)))
