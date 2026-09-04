@@ -667,7 +667,29 @@ function(object)       -> function
 "   ".strip()          -> ""
 bool("   ".strip())    -> False
 ```
+------------------------------------------------------------------------
 
+
+## Standard Library vs Third-Party Packages
+
+Python's `sys.stdlib_module_names` can be used to check whether a module belongs
+to the Python Standard Library.
+
+```python
+import sys
+
+# Show all Python Standard Library module names
+# print(sys.stdlib_module_names)
+
+# Convert the frozenset to a string before printing
+# print(str(sys.stdlib_module_names))
+
+print("\n\nTesting boolean results:")
+
+print("os:", "os" in sys.stdlib_module_names)
+print("subprocess:", "subprocess" in sys.stdlib_module_names)
+print("psutil:", "psutil" in sys.stdlib_module_names)
+```
 ------------------------------------------------------------------------
 
 ## Notes
