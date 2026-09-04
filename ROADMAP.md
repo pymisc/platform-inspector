@@ -57,7 +57,7 @@ Production-Style Platform Engineering Tool
 - [x] **STEP 2 — Strings**  
   Store platform-related values such as hostname, OS name, and environment name in string variables.
 
-- [ ] **STEP 3 — Integers**  
+- [x] **STEP 3 — Integers**  
   Represent values such as CPU count, node count, and restart count.
 
 - [ ] **STEP 4 — Floats**  
