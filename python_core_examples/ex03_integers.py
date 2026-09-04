@@ -1,16 +1,6 @@
 import os
 import psutil
 
-import sys
-# print(sys.stdlib_module_names)
-# print(str(sys.stdlib_module_names))
-print("\n\nTesting boolean results:")
-print("os:", "os" in sys.stdlib_module_names)
-print("subprocess:", "subprocess" in sys.stdlib_module_names)
-print("psutil:", "psutil" in sys.stdlib_module_names)
-
-
-
 cpu_count=os.cpu_count()
 print(cpu_count)
 
