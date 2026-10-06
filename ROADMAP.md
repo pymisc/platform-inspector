@@ -60,7 +60,7 @@ Production-Style Platform Engineering Tool
 - [x] **STEP 3 — Integers**  
   Represent values such as CPU count, node count, and restart count.
 
-- [ ] **STEP 4 — Floats**  
+- [x] **STEP 4 — Floats**  
   Represent values such as memory size, disk usage percentage, and load average.
 
 - [ ] **STEP 5 — Booleans**  
