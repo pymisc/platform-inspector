@@ -63,7 +63,7 @@ Production-Style Platform Engineering Tool
 - [x] **STEP 4 — Floats**  
   Represent values such as memory size, disk usage percentage, and load average.
 
-- [ ] **STEP 5 — Booleans**  
+- [x] **STEP 5 — Booleans**  
   Represent states such as `docker_installed`, `cluster_reachable`, and `healthy`.
 
 - [x] **STEP 6 — Type Inspection & Essential Built-in Functions**  
