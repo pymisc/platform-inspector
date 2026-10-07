@@ -89,7 +89,7 @@ Production-Style Platform Engineering Tool
   Additional built-in functions will be added later as they become relevant
   in future steps.
 
-- [ ] **STEP 7 — String Formatting**  
+- [x] **STEP 7 — String Formatting**  
   Learn f-strings and produce cleaner status output.
 
 - [ ] **STEP 8 — Basic String Methods**  
